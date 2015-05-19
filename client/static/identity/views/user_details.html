@@ -1,0 +1,105 @@
+<md-card layout="row" class="product-details">
+	<div flex="40"
+		layout="column">
+		<!-- <img ng-show="user.photo[0].dataUrl != null" ng-src="{{user.photo[0].dataUrl}}"> -->
+
+		<img ng-src="http://placehold.it/300x300"
+			alt="product">
+
+		<md-button
+			ng-file-select
+			ng-file-change="controller.upload($files)"
+			flex-sm
+			class="md-accent md-raised">upload photo</md-button>
+	</div>
+
+	<md-content md-theme="product" flex="60" layout="column">
+		<form flex
+			layout-gt-md="column"
+			layout-fill
+			layout-align="center center">
+			<div flex>
+				<div
+					layout-padding
+					layout="row"
+					layout-align="center center">
+					<md-input-container flex-sm>
+						<label>ID</label>
+						<input
+							name="id"
+							ng-model="controller.user.id"
+							type="text">
+					</md-input-container>
+				</div>
+
+				<div
+					layout-padding
+					layout="row"
+					layout-align="center center">
+					<md-input-container flex-sm>
+						<label>Email</label>
+						<input
+							name="email"
+							ng-model="controller.user.email"
+							type="email">
+					</md-input-container>
+				</div>
+
+				<div
+					layout-padding
+					layout="row"
+					layout-align="center center">
+					<md-input-container flex-sm>
+						<label>Password</label>
+						<input
+							name="password"
+							ng-model="controller.user.password"
+							type="password">
+					</md-input-container>
+				</div>
+			</div>
+
+			<md-toolbar>
+				<div class="md-toolbar-tools" >
+					<!-- update user button -->
+					<div
+						ng-show="controller.user.id"
+						layout="row"
+						layout-align="space-between center"
+						layout-fill>
+						<md-button flex-sm
+							ng-click="controller.upload(controller.user)"
+							class="md-accent">upload image</md-button>
+
+						<md-button
+							ng-click="controller.update(controller.user)"
+							class="md-accent md-raised md-fab">
+								<md-icon aria-label="cart"
+									class="md-primary"
+									md-svg-src="/static/components/material-design-icons/content/svg/production/ic_create_24px.svg">
+								</md-icon>
+						</md-button>
+					</div>
+
+					<!-- create user button -->
+					<div
+						ng-show="!controller.user.id"
+						layout="row"
+						layout-align="space-between center"
+						layout-fill>
+						<md-button
+							flex-sm
+							ng-click="controller.create(controller.user)"
+							class="md-accent md-raised md-fab">
+							<md-icon
+								class="md-primary"
+								aria-label="cart"
+								md-svg-src="/static/components/material-design-icons/content/svg/production/ic_add_24px.svg">
+							</md-icon>
+						</md-button>
+					</div>
+				</div>
+			</md-toolbar>
+		</form>
+	</md-content>
+</md-card>

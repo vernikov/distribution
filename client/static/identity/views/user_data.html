@@ -1,0 +1,38 @@
+<md-button
+	ng-click="controller.toggleLeftSidenav()"
+	hide-gt-md
+	class="md-primary">
+	<md-icon class="md-primary"
+		aria-label="cart"
+		md-svg-src="/static/components/material-design-icons/navigation/svg/production/ic_menu_24px.svg">
+	</md-icon>
+</md-button>
+
+<div ng-if="! currentUser.isAuthenticated">
+	<md-button class="md-primary">
+			<md-icon
+				aria-label="cart"
+				class="md-primary"
+				md-svg-src="/static/components/material-design-icons/action/svg/production/ic_shopping_cart_24px.svg">
+			</md-icon>
+			<span>Cart</span>
+	</md-button>
+
+	<span>^-^</span>
+
+	<span>John Doe</span>
+
+	<md-button ng-click="unauthenticate(currentUser)" class="md-accent">
+		<span>logout</span>
+	</md-button>
+</div>
+
+<div ng-if="! currentUser.isAuthenticated">
+	<md-button ng-click="authenticate(currentUser)" class="md-raised md-accent">
+		<span>login</span>
+	</md-button>
+
+	<md-button class="md-raised md-accent">
+		<span>signup</span>
+	</md-button>
+</div>

@@ -1,0 +1,4 @@
+*.pyc
+client/static/components
+client/static/files
+server/core/config/secrets.py

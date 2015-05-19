@@ -1,0 +1,111 @@
+<div layout="row">
+	
+<div flex="50" layout="column">
+	<!-- <img ng-show="user.photo[0].dataUrl != null" ng-src="{{user.photo[0].dataUrl}}"> -->
+
+	<img ng-src="/static/files/i3_3550.jpg"
+		alt="product">
+
+	<md-button
+		ng-file-select
+		ng-file-change="controller.upload($files)"
+		flex-sm
+		class="md-accent md-raised">upload photo</md-button>
+</div>
+
+<div flex="50"
+	class="md-background">
+<form
+	layout-gt-md="column"
+	layout-align="center center">
+	<div
+		layout-padding
+		layout="column"
+		layout-align="space-around center">
+		<div
+			layout-padding
+			layout="row"
+			layout-align="center center">
+			<md-input-container flex-sm>
+				<label>ID</label>
+				<input
+					name="id"
+					ng-model="controller.user.id"
+					type="text">
+			</md-input-container>
+		</div>
+
+		<div
+			layout-padding
+			layout="row"
+			layout-align="center center">
+			<md-input-container flex-sm>
+				<label>Email</label>
+				<input
+					name="email"
+					ng-model="controller.user.email"
+					type="email">
+			</md-input-container>
+		</div>
+
+		<div
+			layout-padding
+			layout="row"
+			layout-align="center center">
+			<md-input-container flex-sm>
+				<label>Password</label>
+				<input
+					name="password"
+					ng-model="controller.user.password"
+					type="password">
+			</md-input-container>
+		</div>
+	</div>
+
+	<div
+		layout-fill
+		layout-padding
+		layout-margin
+		layout="row"
+		layout-align="space-around center">
+
+		<md-button
+			flex-sm
+			ng-click="controller.create(controller.user)"
+			class="md-accent md-raised md-fab">
+				<md-icon
+					aria-label="cart"
+					class="md-primary"
+					md-svg-src="/static/components/material-design-icons/action/svg/production/ic_shopping_cart_24px.svg">
+				</md-icon>
+		</md-button>
+
+		<md-button
+			flex-sm
+			ng-click="controller.read(controller.user)"
+			class="md-raised">read</md-button>
+
+		<md-button
+			flex-sm
+			ng-click="controller.update(controller.user)"
+			class="md-accent">update</md-button>
+
+		<md-button
+			flex-sm
+			ng-click="controller.delete(controller.user)"
+			class="md-primary">delete</md-button>
+
+		<md-button
+			flex-sm
+			ng-click="controller.register(controller.user)"
+			class="md-primary md-raised">register</md-button>
+
+		<md-button
+			flex-sm
+			ng-click="controller.authenticate(controller.user)"
+			class="md-primary md-raised">authenticate</md-button>
+	</div>
+</form>
+</div>
+
+</div>

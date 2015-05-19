@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/static/landing/styles/landing.follow.css">
+
+<div class="landing-follow" layout-md="column" layout-gt-sm="row" layout-padding>
+	<div flex="50">
+		<h2 layout="row" layout-align="center">Sign up for the news</h2>
+		<p layout="row" layout-align="center">Get the latest news and special offers</p>
+
+		<form layout-gt-md="row" layout-align="center center">
+			<div layout-padding layout="row" layout-align="center center">
+				<md-icon
+					class="md-primary"
+					md-svg-src="/static/components/material-design-icons/communication/svg/production/ic_email_24px.svg">
+				</md-icon>
+
+				<md-input-container flex-sm>
+					<label>Email</label>
+					<input required name="email" ng-model="user.email" type="email">
+					<div ng-messages="signupForm.email.$error">
+						<div ng-message="required">This field is required</div>
+						<div ng-message="email">Your email address is invalid</div>
+					</div>
+				</md-input-container>
+			</div>
+
+			<div layout="row" layout-align="center center" layout-margin layout-padding>
+				<md-button class="md-accent md-raised" flex-sm>Subscribe</md-button>
+			</div>
+		</form>
+	</div>
+
+	<div flex="50">
+		<h2 layout="row" layout-align="center">Join the team</h2>
+		<p layout="row" layout-align="center">We're hiring smart, talented folks</p>
+
+		<div layout="row" layout-align="center center" layout-margin layout-padding>
+			<md-button class="md-accent md-raised" flex-sm>Apply today</md-button>
+		</div>
+	</div>
+</div>

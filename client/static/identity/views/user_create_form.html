@@ -1,0 +1,31 @@
+<form name="userCreateForm" layout-gt-md="row" layout-align="center center">
+	<div layout-padding layout="row" layout-align="center center">
+		<md-icon class="md-accent md-hue-2" md-svg-src="/static/components/material-design-icons/communication/svg/production/ic_email_24px.svg"></md-icon>
+
+		<md-input-container flex-sm>
+			<label>Email</label>
+			<input required name="email" ng-model="user.email" type="email">
+			<div ng-messages="userCreateForm.email.$error">
+				<div ng-message="required">This field is required</div>
+				<div ng-message="email">Your email address is invalid</div>
+			</div>
+		</md-input-container>
+	</div>
+
+	<div layout-padding layout="row" layout-align="center center">
+		<md-icon class="md-accent md-hue-2" md-svg-src="/static/components/material-design-icons/action/svg/production/ic_lock_24px.svg"></md-icon>
+
+		<md-input-container flex-sm>
+			<label>Password</label>
+			<input required minlength="3" name="password" ng-model="user.password" type="password">
+			<div ng-messages="userCreateForm.password.$error">
+				<div ng-message="required">This field is required</div>
+				<div ng-message="minlength">Password is too short</div>
+			</div>
+		</md-input-container>
+	</div>
+
+	<div layout-padding layout-margin layout="row" layout-align="center center">
+		<md-button flex-sm ng-click="createUser(user)" class="md-primary md-hue-1 md-raised">create</md-button>
+	</div>
+</form>

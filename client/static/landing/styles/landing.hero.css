@@ -1,0 +1,31 @@
+.landing-hero p,
+.landing-hero h1,
+.landing-hero input {
+	color: white !important;
+}
+
+.landing-hero {
+	max-width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-image: url(http://placehold.it/1920x300);
+}
+
+@media (max-width: 1200px) {
+	.landing-hero {
+		background-image: url(http://placehold.it/1200x350);
+	}
+}
+
+@media (max-width: 960px) {
+	.landing-hero {
+		background-image: url(http://placehold.it/960x400);
+	}
+}
+
+@media (max-width: 600px) {
+	.landing-hero {
+		background-image: url(http://placehold.it/600x600);
+	}
+}

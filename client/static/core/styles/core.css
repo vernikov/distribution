@@ -1,0 +1,86 @@
+.product-details {
+	/*height: 100%;*/
+}
+
+html {
+	/*font-size: 16px;*/
+}
+
+body {
+	overflow-y:hidden
+}
+
+/*input {
+	color: white !important;
+}
+
+label {
+	color: white !important;
+}
+
+md-input-container .md-input{
+	border-color: white !important;
+}
+*/
+div[ng-message] {
+	/*color: lightgrey;*/
+}
+
+button.md-primary {
+	/*color: white !important;*/
+}
+
+button.md-accent {
+	color: white !important;
+}
+
+md-toolbar {
+	color: white !important;
+}
+
+md-icon.md-accent {
+	/*color: white !important;*/
+	/*margin: 0px;*/
+	/*height: 2rem;*/
+	/*width: 2rem;*/
+}
+
+md-icon.md-primary {
+	color: white !important;
+	/*margin: 0px;*/
+	/*height: 2rem;*/
+	/*width: 2rem;*/
+}
+
+.product-thumb {
+	width: 56px;
+	margin-top: 10px;
+}
+
+.toolbar-fab {
+	padding: 64px 20px 0 32px;
+}
+
+.padding-top-64 {
+	padding-top: 64px;
+}
+
+.padding-top-48 {
+	padding-top: 48px;
+}
+
+.padding-top-32 {
+	padding-top: 32px;
+}
+
+.padding-bottom-64 {
+	padding-bottom: 64px;
+}
+
+.padding-bottom-48 {
+	padding-bottom: 48px;
+}
+
+.padding-bottom-32 {
+	padding-bottom: 32px;
+}

@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="/static/core/styles/core.css?v=0.1">
+
+<div layout="row" flex>
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2"
+		md-component-id="sidenav-left"
+		md-is-locked-open="$mdMedia('gt-md')">
+		<md-toolbar class="md-primary md-tall">
+			<div class="md-toolbar-tools"
+				layout="row"
+				layout-align="space-between center">
+				<p>Computers Inc.</p>
+			</div>
+
+			<div ui-view="lower-sidenav-toolbar"
+				class="md-toolbar-tools"
+				layout="row"
+				layout-align="space-between center">
+			</div>
+		</md-toolbar>
+
+		<md-content ui-view="sidenav-content"></md-content>
+	</md-sidenav>
+
+	<div flex layout="column">
+		<md-toolbar md-scroll-shrink class="md-primary md-tall">
+			<div ui-view="upper-toolbar"
+				class="md-toolbar-tools"
+				layout="row"
+				layout-align="space-between center">
+			</div>
+
+			<div ui-view="lower-toolbar"
+				class="md-toolbar-tools"
+				layout="row"
+				layout-align="start center">
+			</div>
+		</md-toolbar>
+
+		<md-content
+			flex
+			ui-view="content"
+			layout="column"
+			layout-fill>
+		</md-content>
+	</div>
+</div>
+
+<!-- <nav ui-view="tabs"></nav> -->
+<!-- <nav ui-view="bottom-sheet"></nav> -->
+<!-- <footer ui-view="contacts"></footer> -->

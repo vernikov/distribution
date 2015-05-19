@@ -1,0 +1,40 @@
+<div class="padding-top-32">
+	<md-list layout="column">
+		<md-list-item
+			ng-repeat="user in controller.users"
+			class="md-3-line">
+
+			<md-button
+				ng-href="/#/user/{{user.id}}"
+				aria-label="user details">
+				<img
+					class="product-thumb"
+					ng-src="http://placehold.it/56x56"
+					alt="thumb">
+			</md-button>
+
+			<div class="md-item-text">
+				<h3 ng-bind="user.email"></h3>
+				<h4 ng-bind="user.id"></h4>
+				<p>price: 130$</p>
+			</div>
+
+			<md-button
+				ng-click="controller.delete(user)">
+				<md-icon
+					aria-label="delete"
+					class="md-accent"
+					md-svg-src="/static/components/material-design-icons/action/svg/production/ic_delete_24px.svg">
+				</md-icon>
+			</md-button>
+
+			<md-button ng-href="/#/user/{{user.id}}">
+				<md-icon
+					aria-label="info"
+					class="md-accent"
+					md-svg-src="/static/components/material-design-icons/action/svg/production/ic_info_24px.svg">
+				</md-icon>
+			</md-button>
+		</md-list-item>
+	</md-list>
+</div>

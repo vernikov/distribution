@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/static/landing/styles/landing.hero.css">
+
+<div layout-padding class="landing-hero">
+	<h1 layout="row" layout-align="center">Join our team of professionals</h1>
+
+	<form name="signupForm" layout-gt-md="row" layout-align="center center">
+		<div layout-padding layout="row" layout-align="center center">
+			<md-icon class="md-primary" md-svg-src="/static/components/material-design-icons/communication/svg/production/ic_email_24px.svg"></md-icon>
+
+			<md-input-container flex-sm>
+				<label>Email</label>
+				<input required name="email" ng-model="user.email" type="email">
+				<div ng-messages="signupForm.email.$error">
+					<div ng-message="required">This field is required</div>
+					<div ng-message="email">Your email address is invalid</div>
+				</div>
+			</md-input-container>
+		</div>
+
+		<div layout-padding layout="row" layout-align="center center">
+			<md-icon class="md-primary" md-svg-src="/static/components/material-design-icons/action/svg/production/ic_lock_24px.svg"></md-icon>
+
+			<md-input-container flex-sm>
+				<label>Password</label>
+				<input required minlength="6" name="password" ng-model="user.password" type="password">
+				<div ng-messages="signupForm.password.$error">
+					<div ng-message="required">This field is required</div>
+					<div ng-message="minlength">Password is too short</div>
+				</div>
+			</md-input-container>
+		</div>
+
+		<div layout-padding layout-margin layout="row" layout-align="center center">
+			<md-button flex-sm class="md-accent md-raised">signup</md-button>
+		</div>
+	</form>
+</div>

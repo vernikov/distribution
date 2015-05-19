@@ -1,0 +1,24 @@
+{
+  "name": "Distribution",
+  "version": "0.0.3",
+  "homepage": "https://github.com/zhorzh/distribution",
+  "authors": [
+    "Zhorzh Alexandr <zhorzh.alexandr@gmail.com>"
+  ],
+  "description": "Sales management tool",
+  "main": "/static/core/scripts/app.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "1.3",
+    "angular-material": "latest",
+    "angular-ui-router": "~0.2.13",
+    "angular-picture": "*",
+    "material-design-icons": "~1.0.1",
+    "angular-messages": "~1.3.13",
+    "angular-sanitize": "~1.3.13",
+    "angular-jwt": "~0.0.6",
+    "a0-angular-storage": "~0.0.9",
+    "ng-file-upload": "~3.2"
+  }
+}

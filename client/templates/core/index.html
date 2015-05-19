@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="core">
+	<head>
+		<title>CompanyName</title>
+		<meta charset="UTF-8">
+		<base href="/">
+		<link rel="shortcut icon" href="/static/core/images/favicon.ico" />
+
+		<!-- Angular -->
+		<script src="static/components/angular/angular.js"></script>
+
+		<!-- Angular App -->
+		<script src="static/core/scripts/app.js"></script>
+
+		<!-- Core Module -->
+			<!-- states -->
+		<script src="static/core/scripts/layout.state.js"></script>
+			<!-- config -->
+		<script src="static/core/scripts/config.js"></script>
+		<script src="static/core/scripts/theme.js"></script>
+			<!-- controllers -->
+		<script src="static/core/scripts/navigation.controller.js"></script>
+
+		<!-- Identity Module -->
+			<!-- states -->
+		<script src="static/identity/scripts/states/authentication.state.js"></script>
+		<script src="static/identity/scripts/states/user_list.state.js"></script>
+		<script src="static/identity/scripts/states/user_create.state.js"></script>
+		<script src="static/identity/scripts/states/user_update.state.js"></script>
+			<!-- controllers -->
+		<script src="static/identity/scripts/controllers/user_list.controller.js"></script>
+		<script src="static/identity/scripts/controllers/user_create.controller.js"></script>
+		<script src="static/identity/scripts/controllers/user_update.controller.js"></script>
+		<script src="static/identity/scripts/controllers/authentication.controller.js"></script>
+			<!-- services -->
+		<script src="static/identity/scripts/services/userAPI.service.js"></script>
+		<script src="static/identity/scripts/services/authenticationAPI.service.js"></script>
+
+		<script src="static/landing/scripts/landing.state.js"></script>
+
+		<!-- Angular Material Design Scripts -->
+		<script src="static/components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script src="static/components/angular-aria/angular-aria.min.js"></script>
+		<script src="static/components/angular-animate/angular-animate.min.js"></script>
+		<script src="https://rawgit.com/angular/bower-material/master/angular-material.js"></script>
+		<link rel="stylesheet" href="https://rawgit.com/angular/bower-material/master/angular-material.css">
+		<!-- <script src="static/components/angular-material/angular-material.min.js"></script> -->
+		<!-- <link rel="stylesheet" href="static/components/angular-material/angular-material.min.css"> -->
+
+		<!-- Angular Storage -->
+		<script src="static/components/a0-angular-storage/dist/angular-storage.js"></script>
+
+		<!-- Angular File Upload -->
+		<script src="static/components/ng-file-upload/angular-file-upload.min.js"></script>
+
+		<!-- Angular JWT -->
+		<script src="static/components/angular-jwt/dist/angular-jwt.min.js"></script>
+
+		<!-- Picturefill -->
+		<script src="static/components/picturefill/dist/picturefill.min.js"></script>
+		<script src="static/components/angular-picture/src/angular-picture.js"></script>
+
+		<!-- Angular Messages -->
+		<script src="static/components/angular-messages/angular-messages.min.js"></script>
+
+		<!-- Angular Sanitize -->
+		<script src="static/components/angular-sanitize/angular-sanitize.min.js"></script>
+	</head>
+
+	<body ui-view="layout" layout="column" layout-fill></body>
+</html>
